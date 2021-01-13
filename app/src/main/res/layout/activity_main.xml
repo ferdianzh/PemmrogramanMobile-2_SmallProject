@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center"
+        android:textSize="48sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Menu" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/menu_margin"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/btn_beratbadan"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu1_beratbadan_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Berat Badan Ideal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_nilaiakhir"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu2_nilaiakhir_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Nilai Perkuliahan"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/menu_margin"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/btn_bangundatar"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu3_bangundatar_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Bangun Datar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_bangunruang"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu4_bangunruang_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Bangun Ruang"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/btn_konversisuhu"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu5_konversisuhu_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Konversi Suhu"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_exit"
+            android:layout_width="@dimen/menu_width"
+            android:layout_height="@dimen/menu_height"
+            android:orientation="vertical"
+            android:background="@color/colorSecondary"
+            android:gravity="center"
+            android:onClick="pindah">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_margin"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu6_exit_48"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/menu_textsize"
+                android:textColor="#ffffff"
+                android:text="Keluar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="muhammadHafizh_058" />
+
+</LinearLayout>

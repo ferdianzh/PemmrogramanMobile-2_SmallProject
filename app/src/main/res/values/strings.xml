@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">App2SmallProject</string>
+
+    <string-array name="bangundatar">
+        <item>Persegi</item>
+        <item>Segitiga</item>
+        <item>Lingkaran</item>
+    </string-array>
+    <string-array name="bangunruang">
+        <item>Balok</item>
+        <item>Tabung</item>
+        <item>Bola</item>
+    </string-array>
+    <string-array name="unitsuhu">
+        <item>Celcius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+</resources>
